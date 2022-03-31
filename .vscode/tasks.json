@@ -1,0 +1,69 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe etkin dosyayı derle",
+            "command": "C:\\Program Files\\msys2\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Hata Ayıklayıcısı tarafından oluşturulan görev."
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cl.exe etkin dosyayı derle",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fe:",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build",
+            "detail": "derleyici: cl.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe etkin dosyayı derle",
+            "command": "C:\\Program Files\\msys2\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "derleyici: \"C:\\Program Files\\msys2\\mingw64\\bin\\g++.exe\""
+        }
+    ],
+    "version": "2.0.0"
+}
